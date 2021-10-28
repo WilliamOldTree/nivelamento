@@ -1,0 +1,42 @@
+1 -# puts "Cálculo da Tabuada"
+2 -# puts "Digite o número que deseja calcular na tabuada"
+3 -# numero = gets.chomp.to_i
+4 -
+5 -# for i in(1..10)
+6 -#     puts numero.to_s + " x " + i.to_s + " = " + (numero * i).to_s
+7 -# end
+8 - 
+9 -# 
+10 -puts "Cálculo do MMC"
+11 -print "Digite um número para x : "
+12 -x = gets.chomp.to_i
+13 -print "Digite um número para y : "
+14 -y = gets.chomp.to_i
+15 -
+16 -if x > y
+17 -    maior = x
+18 -    menor = y
+19 -else
+20 -    maior = y
+21 -    menor = x
+22 -end
+23 -
+24 -mmc = maior
+25 -while mmc % menor != 0
+26 -    mmc += maior
+27 -end
+28 -
+29 -puts "MMC " + x.to_s + ", " + y.to_s + " = " + mmc.to_s
+
+
+********************************************************Analise do codigo*******************************************************************************************
+*   da linha 1 ate 9 comentarios, linha 10 printa na tela o nome da aplicacao, linha 11 pede ao usuario uma entrada de dados,                                      *
+*   linha 12 chama a função gets, armazena o dado na variavel X e converte par um tipo inteiro, linhas 13 e 14 os mesmos                                           * 
+*   passos das linhas 11 e 12 armazenando na variavel Y, linha 16 efetua uma condição com o operador maior que ">", armazena                                       *
+*   os valores na variaveis em uma determinada posição caso seja verdadeira a informação da linha 16, na linha 19 caso seja falsa a informação                     *
+*   da linha 16, inverte a posiçao dos dados nas variaveis, linha 22 finaliza a estrutura de decisão, linha 24 cria uma variavel e armazena a informação           *
+*   apos ser analizada pela estrutura de decisão, linha 25 cria um estrutura de repetição do tipo while e cria a condicional que enquanto o resto                  *
+*   da divisão de duas variaveis forem diferentes de zerouma variavel recebe o valor dela mesmo mais o valor da outra, linha 27 finaliza a estrutura while,        *
+*   linha 29 printa o valor dos dados fornecido pelo usuario e o valor final da variavel criada na linha 24 apos passar pelo calculo da linha 26,                  *
+*   tudo isso concatenado e com a saida modificada para o tipo String.                                                                                             *
+********************************************************************************************************************************************************************   
