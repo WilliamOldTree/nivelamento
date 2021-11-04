@@ -21,4 +21,6 @@ end
 texto = "LÁ É RETRÔ, MADAME, TEMA DA MORTE REAL!"
 texto2= "A história se repete, a primeira vez como tragédia e a segunda como farsa."
 texto3= "ABC DEFG. GFEDC BA!"
+palindromo(texto)
+palindromo(texto2)
 palindromo(texto3)

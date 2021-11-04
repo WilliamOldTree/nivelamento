@@ -15,7 +15,7 @@ def precoMaca(macas)
   quantidade = macas
   preco = 0.00
   venda = 0.00
-  if  quantidade >= 6
+  if  quantidade >= 12
     preco = 0.25
   else
     preco = 0.30
