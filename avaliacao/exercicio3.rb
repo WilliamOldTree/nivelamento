@@ -5,28 +5,25 @@ Valide o parâmetro da altura da escada, que deve ser um número maior ou igual 
 Caso contrário, a função deve retornar um array vazio.
 =end
 
-def alturaEscada(degraus)
-    arrayVazio = []
-    
+def alturaEscada(degrau)
 
-    if degraus < 1
-        puts "Dados invalidos a escada deve ter ao menos um degrau"
-        return arrayVazio
-    else
-        piso =""
-        face = "#"
-        escada = ""    
-        for i in (1..degraus)
-            puts escada = piso + (face * i)
-            piso+="_"
-            face-="#"
-            
-        end
-        
+  if degrau < 1
+    puts "Argumentos invalidos"
+     return []
+  end 
+  array = []
+  for i in (1..degrau)
+    piso = ""
+    for j in (2..i)
+      piso = piso + "_"
     end
-    
-    
+      for j in (i..degrau)
+        piso = piso + "#"
+      end
+  array.unshift(piso)
+  end
+  return array
 end
-print "Quantos degraus deseja em sua escada ?   "
-degraus = gets.chomp.to_i
-alturaEscada(degraus)
+print "Quantos degraus tera sua escada ?    "
+degrau = gets.chomp.to_i
+puts alturaEscada(degrau)

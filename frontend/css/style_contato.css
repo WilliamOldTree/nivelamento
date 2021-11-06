@@ -1,0 +1,11 @@
+input{
+    background-color: #ff0000;
+}
+
+input:focus {
+    background-color: #000000;
+}
+
+textarea{
+    resize: horizontal;
+}
